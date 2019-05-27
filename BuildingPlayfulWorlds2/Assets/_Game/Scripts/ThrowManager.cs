@@ -5,19 +5,15 @@ using UnityEngine;
 public class ThrowManager : MonoBehaviour
 {
     GameObject ball;
-    public GameObject ballManager;
     Rigidbody rb;
     private Ball CurrentBall;
+
+    [SerializeField] GameObject attachPosition;
 
     Camera mainCamera;
     // Start is called before the first frame update
     void Start()
     {
-        ball = GetComponentInChildren<Ball>().gameObject;
-        rb = ball.GetComponent<Rigidbody>();
-        rb.isKinematic = true;
-        ballManager = GetComponentInChildren<BallManager>().gameObject;
-
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
@@ -36,7 +32,7 @@ public class ThrowManager : MonoBehaviour
                 if (ball != null)
                 {
                     CurrentBall = ball;
-                    CurrentBall.OnPickup();
+                    CurrentBall.OnPickup(attachPosition);
                 }
             }  
         }
@@ -44,9 +40,11 @@ public class ThrowManager : MonoBehaviour
         //Throw
         if (Input.GetMouseButtonDown(0) && CurrentBall != null)
         {
+            CurrentBall.transform.parent = null;
             CurrentBall.OnRelease();
             CurrentBall.AddForce();
             CurrentBall = null;
+            
         }
     }
 }
