@@ -22,6 +22,8 @@ public class Ball : MonoBehaviour
     [SerializeField] float durationOut = 5f;
 
     private bool isMetal = false;
+    private bool isWood = false;
+    private bool isStone = false;
     private bool isFadeOut = false;
     private bool gameStart = true;
 
@@ -76,52 +78,45 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.tag == "Metal")
         {
-            //StartCoroutine(SetIntensity());
             isMetal = true;
-            StartCoroutine(fadeIn(mainLight, isMetal, durationIn));
-            
+            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
             //TODO Add sound
             
         }
         else if (collision.gameObject.tag == "Wood")
         {
-            //mainLight.intensity = Mathf.Lerp(mainLight.intensity, woodIntensity, Time.deltaTime * fadeSpeed);
-            //TODO Lerp from current intensity to 5000 and back
-
+            isWood = true;
+            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
             //TODO Add sound
         }
         else if (collision.gameObject.tag == "Stone")
         {
-            //TODO Lerp from current intensity to 5000 and back
-            //mainLight.intensity = 5000;
+            isStone = true;
+            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
             //TODO Add sound
         }
         else
         {
+            isMetal = false;
+            isStone = false;
+            isWood = false;
+            isFadeOut = true;
             StartCoroutine(fadeOut(mainLight, isFadeOut, durationOut));
         }
 
     }
 
-    /*IEnumerator SetIntensity()
-    {
-        //mainLight.intensity = Mathf.Lerp(mainLight.intensity, metalIntensity, Time.deltaTime * fadeSpeedIn);
-        mainLight.intensity += 0.05f;
-        yield return new WaitWhile(() => mainLight.intensity >= metalIntensity);
-        //yield return new WaitForSeconds(10f);
-        mainLight.intensity -= 0.05f;
-        //mainLight.intensity = Mathf.Lerp(mainLight.intensity, mainIntensity, Time.deltaTime * fadeSpeedOut);
-    }*/
-
-    IEnumerator fadeIn(Light mainLight, bool isMetal, float duration)
+    IEnumerator fadeIn(Light mainLight, bool isMetal, bool isWood, bool isStone, float duration)
     {
         float counter = 0f;
         float a, b;
 
         if (isMetal) { newIntensity = metalIntensity; }
+        else if (isWood) { newIntensity = woodIntensity; }
+        else if (isStone) { newIntensity = stoneIntensity; }
         else { newIntensity = mainIntensity; }
 
-        if (isMetal)
+        if (isMetal || isWood || isStone)
         {
             a = mainIntensity;
             b = newIntensity;
