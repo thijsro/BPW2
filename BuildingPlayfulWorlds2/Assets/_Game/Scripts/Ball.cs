@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] float thrust;
     GameObject lightSource;
     private Light mainLight;
+    private int ballKind; //1 = ballbounce 2 = ballstick
 
     [SerializeField] float mainIntensity = 2000f;
     [SerializeField] float metalIntensity = 5000f;
@@ -15,8 +16,8 @@ public class Ball : MonoBehaviour
     [SerializeField] float woodIntensity = 4000f;
     [SerializeField] float fadeSpeedIn = 50f;
     [SerializeField] float fadeSpeedOut = 5f;
-    [SerializeField] float newIntensity;
-    [SerializeField] float currentIntensity;
+    private float newIntensity;
+    private float currentIntensity;
 
     [SerializeField] float durationIn = 1f;
     [SerializeField] float durationOut = 5f;
@@ -31,6 +32,7 @@ public class Ball : MonoBehaviour
     //TODO Add wood sound
     //TODO Add stone sound
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,24 +40,32 @@ public class Ball : MonoBehaviour
         rb.isKinematic = false;
         lightSource = GetComponentInChildren<Light>().gameObject;
         mainLight = lightSource.GetComponent<Light>();
-        mainLight.intensity = mainIntensity;
-        currentIntensity = mainIntensity;
+        if(this.gameObject.tag == "ballbounce") { ballKind = 1; }
+        else if (this.gameObject.tag == "ballstick") { ballKind = 2; }
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentIntensity);
-        currentIntensity = mainLight.intensity;
+        Debug.Log(mainLight.intensity);
+
     }
 
     public void OnPickup(GameObject newParent)
     {
-        rb.isKinematic = true;
+        if (rb.isKinematic == false)
+        {
+            rb.isKinematic = true;
+        }
         GetComponent<Collider>().enabled = false;
         transform.parent = newParent.transform;
         transform.position = newParent.transform.position;
-        lightSource.GetComponent<Light>().intensity = mainIntensity;
+        if(ballKind == 2)
+        {
+            StartCoroutine(fadeIn(mainLight, mainIntensity, durationOut));
+        }
     }
 
     public void OnRelease()
@@ -64,8 +74,6 @@ public class Ball : MonoBehaviour
         rb.isKinematic = false;
         //TODO wait for seconds
         GetComponent<Collider>().enabled = true;
-
-
     }
 
     public void AddForce()
@@ -74,102 +82,75 @@ public class Ball : MonoBehaviour
         Debug.Log("gooi bal");
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Metal")
+        if(ballKind == 1)
         {
-            isMetal = true;
-            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
-            //TODO Add sound
-            
+            Debug.Log("collided with " + collision.name);
+            StopAllCoroutines();
+            if (collision.gameObject.tag == "Metal")
+            {
+                isMetal = true;
+                StartCoroutine(fadeIn(mainLight, metalIntensity, durationIn));
+                //TODO Add sound
+
+            }
+            else if (collision.gameObject.tag == "Wood")
+            {
+                isWood = true;
+                StartCoroutine(fadeIn(mainLight, woodIntensity, durationIn));
+                //TODO Add sound
+            }
+            else if (collision.gameObject.tag == "Stone")
+            {
+                isStone = true;
+                StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
+                //TODO Add sound
+            }
+            else
+            {
+                StartCoroutine(fadeIn(mainLight, mainIntensity, durationOut));
+            }
         }
-        else if (collision.gameObject.tag == "Wood")
+        else if(ballKind == 2)
         {
-            isWood = true;
-            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
-            //TODO Add sound
-        }
-        else if (collision.gameObject.tag == "Stone")
-        {
-            isStone = true;
-            StartCoroutine(fadeIn(mainLight, isMetal, isWood, isStone, durationIn));
-            //TODO Add sound
-        }
-        else
-        {
-            isMetal = false;
-            isStone = false;
-            isWood = false;
-            isFadeOut = true;
-            StartCoroutine(fadeOut(mainLight, isFadeOut, durationOut));
+            rb.isKinematic = true;
+            if (collision.gameObject.tag == "Metal")
+            {
+                isMetal = true;
+                StartCoroutine(fadeIn(mainLight, metalIntensity, durationIn));
+                //TODO Add sound
+
+            }
+            else if (collision.gameObject.tag == "Wood")
+            {
+                isWood = true;
+                StartCoroutine(fadeIn(mainLight, woodIntensity, durationIn));
+                //TODO Add sound
+            }
+            else if (collision.gameObject.tag == "Stone")
+            {
+                isStone = true;
+                StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
+                //TODO Add sound
+            }
         }
 
     }
 
-    IEnumerator fadeIn(Light mainLight, bool isMetal, bool isWood, bool isStone, float duration)
+
+    IEnumerator fadeIn(Light Light, float newIntensity, float duration)
     {
+        float startIntensity = Light.intensity;
         float counter = 0f;
-        float a, b;
 
-        if (isMetal) { newIntensity = metalIntensity; }
-        else if (isWood) { newIntensity = woodIntensity; }
-        else if (isStone) { newIntensity = stoneIntensity; }
-        else { newIntensity = mainIntensity; }
-
-        if (isMetal || isWood || isStone)
-        {
-            a = mainIntensity;
-            b = newIntensity;
-        }
-        else
-        {
-            a = newIntensity;
-            b = mainIntensity;
-        }
-
-        //float currentIntensity = mainLight.intensity;
-
-        while (counter < durationIn)
+        while (counter < duration)
         {
             counter += Time.deltaTime;
 
-            mainLight.intensity = Mathf.Lerp(a, b, counter / durationIn);
+            Light.intensity = Mathf.Lerp(startIntensity, newIntensity, counter / duration);
 
             yield return null;
         }
-
-    }
-
-    IEnumerator fadeOut(Light mainLight, bool isFadeOut, float duration)
-    {
-        float counter = 0f;
-        float a, b;
-        //float startIntensity = 20;
-
-        currentIntensity = mainLight.intensity;
-        newIntensity = mainIntensity;
-
-        if (isFadeOut)
-        {
-            a = currentIntensity;
-            b = newIntensity;
-        }
-        else
-        {
-            a = currentIntensity;
-            b = newIntensity;
-        }
-
-        //float currentIntensity = mainLight.intensity;
-
-        while (counter < durationOut)
-        {
-            counter += Time.deltaTime;
-
-            mainLight.intensity = Mathf.Lerp(a, b, counter / durationOut);
-
-            yield return null;
-        }
-        yield return null;
-    }
+    }    
 }

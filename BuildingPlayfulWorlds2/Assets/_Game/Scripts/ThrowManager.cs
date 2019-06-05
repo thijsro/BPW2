@@ -7,6 +7,7 @@ public class ThrowManager : MonoBehaviour
     GameObject ball;
     Rigidbody rb;
     private Ball CurrentBall;
+    public LayerMask ballLayer;
 
     [SerializeField] GameObject attachPosition;
 
@@ -26,7 +27,7 @@ public class ThrowManager : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
             RaycastHit hit;     
-            if (Physics.Raycast(ray, out hit, 10f))
+            if (Physics.Raycast(ray, out hit, 10f, ballLayer))
             {
                 Ball ball = hit.collider.gameObject.GetComponent<Ball>();
                 if (ball != null)
