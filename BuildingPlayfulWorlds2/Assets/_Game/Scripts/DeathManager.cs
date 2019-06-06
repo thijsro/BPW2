@@ -13,9 +13,11 @@ public class DeathManager : MonoBehaviour
     Vignette vignette;
 
     public float VignetteInt;
-    public Transform LightTransform;
 
     public float maxLightDistance = 10;
+    [SerializeField] float fadeSpeed = 2f;
+    float lerpTime;
+
 
     private void Start()
     {
@@ -25,14 +27,13 @@ public class DeathManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(vignette.intensity.value);
-        // Je kan ook de lightransform public assignen dan hoef je hem niet te krijgen d.m.v. de trigger
+        //Debug.Log(vignette.intensity.value);
 
         
         if (!inLight)
         {
             Debug.Log("NOTINLIGHT");
-            TowardsDeath();
+            //TowardsDeath();
         }
         else
         {
@@ -49,14 +50,15 @@ public class DeathManager : MonoBehaviour
     
     public void TowardsDeath()
     {
+        lerpTime += (Time.deltaTime / fadeSpeed);
 
-        vignette.intensity.value = Mathf.Lerp(VignetteInt, 1f, Time.deltaTime / 0.5f);
+        vignette.intensity.value = Mathf.Lerp(VignetteInt, 1f, lerpTime);
     }
 
     public void TowardsLife()
     {
-        vignette.intensity.value = 0.3f;
-            //Mathf.Lerp(VignetteInt, 0.3f, Time.deltaTime * 0.01f);
+        lerpTime += (Time.deltaTime / fadeSpeed);
+        vignette.intensity.value = Mathf.Lerp(VignetteInt, 0.3f, lerpTime);
     }
     
 

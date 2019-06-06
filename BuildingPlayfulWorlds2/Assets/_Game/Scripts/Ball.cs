@@ -42,14 +42,14 @@ public class Ball : MonoBehaviour
         mainLight = lightSource.GetComponent<Light>();
         if(this.gameObject.tag == "ballbounce") { ballKind = 1; }
         else if (this.gameObject.tag == "ballstick") { ballKind = 2; }
-
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(mainLight.intensity);
+        //Debug.Log(mainLight.intensity);
 
     }
 
@@ -71,19 +71,19 @@ public class Ball : MonoBehaviour
     public void OnRelease()
     {
         transform.SetParent(null);
+        GetComponent<Collider>().enabled = true;
         rb.isKinematic = false;
         //TODO wait for seconds
-        GetComponent<Collider>().enabled = true;
+        
     }
 
     public void AddForce()
     {
         rb.AddForce(GameObject.FindGameObjectWithTag("MainCamera").transform.forward * thrust);
-        Debug.Log("gooi bal");
     }
 
     public void OnTriggerEnter(Collider collision)
-    {
+    {  
         if(ballKind == 1)
         {
             Debug.Log("collided with " + collision.name);
@@ -114,9 +114,9 @@ public class Ball : MonoBehaviour
         }
         else if(ballKind == 2)
         {
-            rb.isKinematic = true;
             if (collision.gameObject.tag == "Metal")
             {
+                rb.isKinematic = true;
                 isMetal = true;
                 StartCoroutine(fadeIn(mainLight, metalIntensity, durationIn));
                 //TODO Add sound
@@ -124,12 +124,14 @@ public class Ball : MonoBehaviour
             }
             else if (collision.gameObject.tag == "Wood")
             {
+                rb.isKinematic = true;
                 isWood = true;
                 StartCoroutine(fadeIn(mainLight, woodIntensity, durationIn));
                 //TODO Add sound
             }
             else if (collision.gameObject.tag == "Stone")
             {
+                rb.isKinematic = true;
                 isStone = true;
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
                 //TODO Add sound
