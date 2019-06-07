@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -8,14 +9,16 @@ public class FirstPersonController : MonoBehaviour
     bool doInput = false;
     [SerializeField] float startDelay = 10f;
     [SerializeField] float fadeInTime = 3f;
+    public Image planeIm;
 
     [FMODUnity.EventRef] public string VoiceOver1;
 
+    bool isFading;
     // Start is called before the first frame update
     void Start()
     {
         FMODUnity.RuntimeManager.PlayOneShot(VoiceOver1, this.transform.position);
-        StartCoroutine(startGame());
+        StartCoroutine(startGame(fadeInTime, planeIm));
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -39,18 +42,24 @@ public class FirstPersonController : MonoBehaviour
 
     }
 
-    IEnumerator startGame(duration)
+    IEnumerator startGame(float duration, Image image)
     {
-        float counter = 0f;
-
-        while (counter < fadeInTime)
-        {
-            counter += Time.deltaTime;
-
-            Light.intensity = Mathf.Lerp(startIntensity, newIntensity, counter / fadeInTime);
-
-        }
-        doInput = true;
+        
         yield return new WaitForSeconds(10);
+        doInput = true;
     }
+
+    /*IEnumerator FadeTo(float aValue, float aTime, Image image)
+    {
+        float alpha = image.color.a;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+            Color newColor = new Color(image.color.r, image.color.g, image.color.b, Mathf.Lerp(alpha, aValue, t));
+            image.color = newColor;
+            Debug.Log(alpha);
+            yield return null;
+        }
+        
+        
+    }*/
 }
