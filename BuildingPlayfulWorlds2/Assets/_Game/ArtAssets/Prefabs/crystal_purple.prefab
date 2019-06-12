@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2166974224427035065}
-  m_Layer: 0
-  m_Name: crystal_01
+  m_Layer: 12
+  m_Name: crystal_purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 268441743665336593}
   - component: {fileID: 3873022939954572407}
   - component: {fileID: 4127511467050828686}
-  m_Layer: 0
+  - component: {fileID: 423306167240382340}
+  m_Layer: 12
   m_Name: pCube11
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +92,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa1551570a37c1b439ce39731b13a786, type: 2}
+  - {fileID: 2100000, guid: 0b80ce40fc1d7d941a0a653afe5de226, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,6 +125,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.025
   m_Center: {x: -0.0017303489, y: 0.0014055204, z: 0.00083159003}
+--- !u!114 &423306167240382340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010465758746840128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574a04254dfe6d54bbcdd49fbe931f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMaterial: {fileID: 2100000, guid: 8add145029cf0b1448005a111ee9de68, type: 2}
+  pointLight: {fileID: 5826813874378913916}
 --- !u!1 &7493879860170829699
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +151,7 @@ GameObject:
   - component: {fileID: 8978215173931744390}
   - component: {fileID: 8342902950718094837}
   - component: {fileID: 7272697142333728374}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &297931706517117175
 Transform:
   m_ObjectHideFlags: 0
@@ -233,7 +248,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0, g: 0.6862745, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.1764706, b: 1, a: 1}
   m_Intensity: 900
   m_Range: 7
   m_SpotAngle: 30
@@ -318,7 +333,7 @@ MonoBehaviour:
   shapeHeight: 0.5
   aspectRatio: 1
   shapeRadius: 0
-  maxSmoothness: 0.99
+  maxSmoothness: 0
   applyRangeAttenuation: 1
   useOldInspector: 0
   useVolumetric: 1
