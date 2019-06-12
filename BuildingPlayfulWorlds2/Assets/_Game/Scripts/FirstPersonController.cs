@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FirstPersonController : MonoBehaviour
 {
     public float speed = 10.0f;
-    bool doInput = false;
+    public bool doInput = false;
     [SerializeField] float startDelay = 10f;
     [SerializeField] float fadeInTime = 3f;
     public Image planeIm;
