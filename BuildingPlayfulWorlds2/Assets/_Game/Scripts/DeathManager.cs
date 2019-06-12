@@ -32,12 +32,12 @@ public class DeathManager : MonoBehaviour
         
         if (!inLight)
         {
-            Debug.Log("NOTINLIGHT");
+            //Debug.Log("NOTINLIGHT");
             //TowardsDeath();
         }
         else
         {
-            Debug.Log("INLIGHT");
+            //Debug.Log("INLIGHT");
             TowardsLife();  
             /*if (LightTransform != null)
             {

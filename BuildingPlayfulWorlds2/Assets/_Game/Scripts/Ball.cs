@@ -107,6 +107,11 @@ public class Ball : MonoBehaviour
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
                 //TODO Add sound
             }
+            else if (collision.gameObject.tag == "Crystal")
+            {
+                StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
+                collision.gameObject.GetComponent<CrystalScript>().TurnOn();
+            }
             else
             {
                 StartCoroutine(fadeIn(mainLight, mainIntensity, durationOut));
@@ -135,6 +140,12 @@ public class Ball : MonoBehaviour
                 isStone = true;
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
                 //TODO Add sound
+            }
+            else if (collision.gameObject.tag == "Crystal")
+            {
+                rb.isKinematic = true;
+                StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
+                
             }
         }
 

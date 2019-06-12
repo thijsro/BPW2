@@ -10,6 +10,7 @@ TagManager:
   - ballbounce
   - ballstick
   - RenderSettings
+  - Crystal
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - ballLayer
   - LightCheckerLayer
   - PlayerLayer
-  - 
+  - crystalLayer
   - 
   - 
   - 

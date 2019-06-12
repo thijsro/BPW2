@@ -8,6 +8,7 @@ public class ThrowManager : MonoBehaviour
     Rigidbody rb;
     private Ball CurrentBall;
     public LayerMask ballLayer;
+    public LayerMask crystalLayer;
 
     [SerializeField] GameObject attachPosition;
 
@@ -26,7 +27,7 @@ public class ThrowManager : MonoBehaviour
         {
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
-            RaycastHit hit;     
+            RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 10f, ballLayer))
             {
                 Ball ball = hit.collider.gameObject.GetComponent<Ball>();
@@ -35,7 +36,15 @@ public class ThrowManager : MonoBehaviour
                     CurrentBall = ball;
                     CurrentBall.OnPickup(attachPosition);
                 }
-            }  
+                
+            }
+            if (Physics.Raycast(ray, out hit, 10f, crystalLayer))
+            {
+                Debug.Log("CRYSTAL HIT");
+                CrystalScript Crystal = hit.collider.gameObject.GetComponent<CrystalScript>();
+                Crystal.TurnOn();
+                
+            }
         }
 
         //Throw

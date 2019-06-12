@@ -11,8 +11,7 @@ public class LightChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        //11 = PlayerLayer
+        //Debug.Log(other.gameObject.name);
         if (other.gameObject.layer == 11)
         {
             FindObjectOfType<DeathManager>().inLight = true;
