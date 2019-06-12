@@ -6,6 +6,8 @@ public class CrystalScript : MonoBehaviour
 {
     public Material newMaterial;
     public Light pointLight;
+    public Bridge bridge;
+    public bool isOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +19,13 @@ public class CrystalScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void TurnOn()
     {
         pointLight.gameObject.SetActive(true);
         this.GetComponent<MeshRenderer>().material = newMaterial;
+        isOn = true;
+        bridge.checkCrystals();
+        
     }
+
 }
