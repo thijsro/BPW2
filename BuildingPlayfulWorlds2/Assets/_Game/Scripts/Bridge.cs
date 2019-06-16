@@ -6,10 +6,12 @@ public class Bridge : MonoBehaviour
 {
     public GameObject[] crystals;
     public GameObject winCrystal;
+    public GameObject objectEnable;
 
     // Start is called before the first frame update
     void Start()
     {
+        objectEnable. SetActive(true);
         foreach (GameObject crystal in crystals)
         {
             crystal.GetComponentInChildren<CrystalScript>().bridge = this;
@@ -19,18 +21,23 @@ public class Bridge : MonoBehaviour
     public void Open()
     {
         winCrystal.GetComponentInChildren<CrystalScript>().TurnOn();
+        objectEnable.SetActive(false);
         Debug.Log("BRIDGE OPEN");
     }
 
     public void checkCrystals()
     {
-        foreach (GameObject crystal in crystals)
+        for (int i = 0; i < crystals.Length; i++)
         {
-            if (crystal.GetComponentInChildren<CrystalScript>().isOn == false)
+            if (crystals[i].GetComponentInChildren<CrystalScript>().isOn == false)
             {
-                return;
+                
+            }
+            else
+            {
+                Open();
             }
         }
-        Open();
+        
     }
 }
