@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7211233832128956705}
   m_Layer: 0
   m_Name: Cube.025
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1120547897276512763}
   m_Layer: 0
   m_Name: polySurface3
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 6491293659393405906}
   m_Layer: 0
   m_Name: transform38
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5804042183245231868}
   m_Layer: 0
   m_Name: transform11
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 7126317177270292579}
   m_Layer: 0
   m_Name: transform14
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 2548163531268023519}
   m_Layer: 0
   m_Name: transform43
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 6513600913310388064}
   m_Layer: 0
   m_Name: polySurface8 1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 8733466469280281731}
   m_Layer: 0
   m_Name: polySurface14
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 3125959233000655208}
   m_Layer: 0
   m_Name: transform17
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 8273477975265488070}
   m_Layer: 0
   m_Name: transform23
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 5624723118114655974}
   m_Layer: 0
   m_Name: polySurface6
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 5665167066106049275}
   m_Layer: 0
   m_Name: polySurface5
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 7448177238832564115}
   m_Layer: 0
   m_Name: transform20
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 8983109302229697516}
   m_Layer: 0
   m_Name: polySurface2
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 3708486841927765507}
   m_Layer: 0
   m_Name: polySurface15
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 9099571236311581490}
   m_Layer: 0
   m_Name: transform33
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 33843144559761598}
   m_Layer: 0
   m_Name: polySurface19
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,9 +530,10 @@ GameObject:
   - component: {fileID: 8528846501580857528}
   - component: {fileID: 5570487670035064546}
   - component: {fileID: 8805932779405464946}
+  - component: {fileID: 5339272696902688329}
   m_Layer: 0
   m_Name: polySurface22
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -596,6 +597,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5339272696902688329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2434663237611739583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -889180119648741084, guid: 1327a016c1ab34e4d9ee6ec8e1760f14, type: 3}
 --- !u!1 &2637355281522038625
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +622,7 @@ GameObject:
   - component: {fileID: 2205138219774010239}
   m_Layer: 0
   m_Name: polySurface1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -638,7 +653,7 @@ GameObject:
   - component: {fileID: 5406548412427476274}
   m_Layer: 0
   m_Name: transform34
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +683,7 @@ GameObject:
   - component: {fileID: 5620849119818533884}
   m_Layer: 0
   m_Name: transform44
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,7 +713,7 @@ GameObject:
   - component: {fileID: 2548795268500611513}
   m_Layer: 0
   m_Name: transform39
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -728,7 +743,7 @@ GameObject:
   - component: {fileID: 4210668294918350918}
   m_Layer: 0
   m_Name: transform49
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,7 +773,7 @@ GameObject:
   - component: {fileID: 6024808153081739933}
   m_Layer: 0
   m_Name: polySurface13
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -802,7 +817,7 @@ GameObject:
   - component: {fileID: 4808446718020809796}
   m_Layer: 0
   m_Name: Cube.062
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -833,7 +848,7 @@ GameObject:
   - component: {fileID: 1346229149167089927}
   m_Layer: 0
   m_Name: transform31
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -863,7 +878,7 @@ GameObject:
   - component: {fileID: 6043558688722350764}
   m_Layer: 0
   m_Name: polySurface23
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,7 +909,7 @@ GameObject:
   - component: {fileID: 3239910089207902612}
   m_Layer: 0
   m_Name: Cube.061
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,7 +940,7 @@ GameObject:
   - component: {fileID: 984071790897355181}
   m_Layer: 0
   m_Name: transform36
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -955,7 +970,7 @@ GameObject:
   - component: {fileID: 913038728189766216}
   m_Layer: 0
   m_Name: Cube.059
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -986,7 +1001,7 @@ GameObject:
   - component: {fileID: 7519444512633104608}
   m_Layer: 0
   m_Name: transform29
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1031,7 @@ GameObject:
   - component: {fileID: 3007280352647782630}
   m_Layer: 0
   m_Name: polySurface8
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1047,7 +1062,7 @@ GameObject:
   - component: {fileID: 8600996354262563443}
   m_Layer: 0
   m_Name: transform48
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1092,7 @@ GameObject:
   - component: {fileID: 7184785992439495814}
   m_Layer: 0
   m_Name: polySurface7
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,7 +1123,7 @@ GameObject:
   - component: {fileID: 4416610988904226892}
   m_Layer: 0
   m_Name: polySurface18
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1139,7 +1154,7 @@ GameObject:
   - component: {fileID: 4705380510001599157}
   m_Layer: 0
   m_Name: transform32
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1169,7 +1184,7 @@ GameObject:
   - component: {fileID: 2633941073765460487}
   m_Layer: 0
   m_Name: Cube.060
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1200,7 +1215,7 @@ GameObject:
   - component: {fileID: 8415254575002324752}
   m_Layer: 0
   m_Name: transform13
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1230,7 +1245,7 @@ GameObject:
   - component: {fileID: 3734331598879535461}
   m_Layer: 0
   m_Name: transform22
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1260,7 +1275,7 @@ GameObject:
   - component: {fileID: 3754720359744685317}
   m_Layer: 0
   m_Name: polySurface12
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1291,7 +1306,7 @@ GameObject:
   - component: {fileID: 8454767335479368932}
   m_Layer: 0
   m_Name: transform12
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1321,7 +1336,7 @@ GameObject:
   - component: {fileID: 1357918549389152255}
   m_Layer: 0
   m_Name: polySurface27
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1352,7 +1367,7 @@ GameObject:
   - component: {fileID: 8076784700791712668}
   m_Layer: 0
   m_Name: Cube.056
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1383,7 +1398,7 @@ GameObject:
   - component: {fileID: 72040532443638024}
   m_Layer: 0
   m_Name: polySurface25
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,7 +1429,7 @@ GameObject:
   - component: {fileID: 7079024137135356166}
   m_Layer: 0
   m_Name: transform15
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1444,7 +1459,7 @@ GameObject:
   - component: {fileID: 4655089917191876008}
   m_Layer: 0
   m_Name: polySurface16
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1475,7 +1490,7 @@ GameObject:
   - component: {fileID: 6250831187083383272}
   m_Layer: 0
   m_Name: polySurface28
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1506,7 +1521,7 @@ GameObject:
   - component: {fileID: 3525290702165688986}
   m_Layer: 0
   m_Name: transform26
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1536,7 +1551,7 @@ GameObject:
   - component: {fileID: 5611617596176681719}
   m_Layer: 0
   m_Name: polySurface26
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1567,7 +1582,7 @@ GameObject:
   - component: {fileID: 1531205641813449879}
   m_Layer: 0
   m_Name: polySurface9
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1598,7 +1613,7 @@ GameObject:
   - component: {fileID: 2093514363327565535}
   m_Layer: 0
   m_Name: polySurface21
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1629,7 +1644,7 @@ GameObject:
   - component: {fileID: 4918916767811020953}
   m_Layer: 0
   m_Name: polySurface20
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1660,7 +1675,7 @@ GameObject:
   - component: {fileID: 6579639090347355099}
   m_Layer: 0
   m_Name: Cube.057
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1691,7 +1706,7 @@ GameObject:
   - component: {fileID: 8975052070178059702}
   m_Layer: 0
   m_Name: polySurface22 1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1722,7 +1737,7 @@ GameObject:
   - component: {fileID: 1812001283900796575}
   m_Layer: 0
   m_Name: Cube.058
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1753,7 +1768,7 @@ GameObject:
   - component: {fileID: 7698677986886452968}
   m_Layer: 0
   m_Name: transform37
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1783,7 +1798,7 @@ GameObject:
   - component: {fileID: 7695230388626197823}
   m_Layer: 0
   m_Name: transform21
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1813,7 +1828,7 @@ GameObject:
   - component: {fileID: 8622205906478119034}
   m_Layer: 0
   m_Name: transform41
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1843,7 +1858,7 @@ GameObject:
   - component: {fileID: 2750421409762728536}
   m_Layer: 0
   m_Name: transform46
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1873,7 +1888,7 @@ GameObject:
   - component: {fileID: 7088433168188451862}
   m_Layer: 0
   m_Name: transform40
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1903,7 +1918,7 @@ GameObject:
   - component: {fileID: 5672773722737304002}
   m_Layer: 0
   m_Name: transform51
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1933,7 +1948,7 @@ GameObject:
   - component: {fileID: 3514960379100993157}
   m_Layer: 0
   m_Name: polySurface4
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1964,7 +1979,7 @@ GameObject:
   - component: {fileID: 7708876536107234687}
   m_Layer: 0
   m_Name: transform18
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1994,7 +2009,7 @@ GameObject:
   - component: {fileID: 2438830965798591813}
   m_Layer: 0
   m_Name: transform25
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2024,7 +2039,7 @@ GameObject:
   - component: {fileID: 2236744877159715975}
   m_Layer: 0
   m_Name: transform28
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2054,7 +2069,7 @@ GameObject:
   - component: {fileID: 2187065850056713893}
   m_Layer: 0
   m_Name: polySurface17
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2085,7 +2100,7 @@ GameObject:
   - component: {fileID: 4609869939630110598}
   m_Layer: 0
   m_Name: transform42
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2115,7 +2130,7 @@ GameObject:
   - component: {fileID: 5873069260630724130}
   m_Layer: 0
   m_Name: Cube.065
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2146,7 +2161,7 @@ GameObject:
   - component: {fileID: 215251213179619531}
   m_Layer: 0
   m_Name: transform19
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2176,7 +2191,7 @@ GameObject:
   - component: {fileID: 948225883834867080}
   m_Layer: 0
   m_Name: polySurface13 1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,7 +2222,7 @@ GameObject:
   - component: {fileID: 8680707131093325341}
   m_Layer: 0
   m_Name: transform50
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2237,7 +2252,7 @@ GameObject:
   - component: {fileID: 1417456936942669439}
   m_Layer: 0
   m_Name: polySurface24
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2268,7 +2283,7 @@ GameObject:
   - component: {fileID: 5141934017778484411}
   m_Layer: 0
   m_Name: transform30
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2298,7 +2313,7 @@ GameObject:
   - component: {fileID: 4871386204793136032}
   m_Layer: 0
   m_Name: transform45
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2328,7 +2343,7 @@ GameObject:
   - component: {fileID: 7655554074925079095}
   m_Layer: 0
   m_Name: transform35
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2358,7 +2373,7 @@ GameObject:
   - component: {fileID: 2375750329802481869}
   m_Layer: 0
   m_Name: Cube.064
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2389,7 +2404,7 @@ GameObject:
   - component: {fileID: 2159868354746366747}
   m_Layer: 0
   m_Name: transform47
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2419,7 +2434,7 @@ GameObject:
   - component: {fileID: 2213174105329349226}
   m_Layer: 0
   m_Name: Cube.063
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,7 +2465,7 @@ GameObject:
   - component: {fileID: 7436994293533262320}
   m_Layer: 0
   m_Name: transform24
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2480,7 +2495,7 @@ GameObject:
   - component: {fileID: 7063755203342829008}
   m_Layer: 0
   m_Name: transform27
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2510,7 +2525,7 @@ GameObject:
   - component: {fileID: 7870730109633750307}
   m_Layer: 0
   m_Name: transform16
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2540,7 +2555,7 @@ GameObject:
   - component: {fileID: 1606101980035899264}
   m_Layer: 0
   m_Name: Cube.085
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2585,7 +2600,7 @@ GameObject:
   - component: {fileID: 5229192306094263855}
   m_Layer: 0
   m_Name: cliff_wall_bol_A_LOW
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2630,7 +2645,7 @@ GameObject:
   - component: {fileID: 4831496457344586984}
   m_Layer: 0
   m_Name: polySurface10
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

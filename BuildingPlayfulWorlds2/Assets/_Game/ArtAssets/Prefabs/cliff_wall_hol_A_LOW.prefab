@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 6375143105367054695}
   m_Layer: 0
   m_Name: Untitled.007
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4491891785431258235}
   m_Layer: 0
   m_Name: cliff_wall_hol_A_LOW
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,9 +173,10 @@ GameObject:
   - component: {fileID: 8050341347664914857}
   - component: {fileID: 1738701941450181792}
   - component: {fileID: 9113466273582033558}
+  - component: {fileID: 2172913147800513803}
   m_Layer: 0
   m_Name: Untitled1
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +240,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2172913147800513803
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996750871614321684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 8425635666060858654, guid: c734c1ac7de8e354883789073880acd6, type: 3}
 --- !u!1 &1095767695701645013
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +265,7 @@ GameObject:
   - component: {fileID: 8405085253998195830}
   m_Layer: 0
   m_Name: Untitled.006
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,7 +296,7 @@ GameObject:
   - component: {fileID: 3850241220884102996}
   m_Layer: 0
   m_Name: Untitled.005
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,7 +417,7 @@ GameObject:
   - component: {fileID: 2630827372445951339}
   m_Layer: 0
   m_Name: Untitled.008
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,7 +448,7 @@ GameObject:
   - component: {fileID: 871495325106203077}
   m_Layer: 0
   m_Name: Untitled.004
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,7 +479,7 @@ GameObject:
   - component: {fileID: 4218303658125359384}
   m_Layer: 0
   m_Name: Untitled.003
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -555,7 +570,7 @@ GameObject:
   - component: {fileID: 9054062928497263603}
   m_Layer: 0
   m_Name: Untitled.010
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,7 +601,7 @@ GameObject:
   - component: {fileID: 3517015570075223838}
   m_Layer: 0
   m_Name: Untitled.009
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -617,7 +632,7 @@ GameObject:
   - component: {fileID: 3866936346523193179}
   m_Layer: 0
   m_Name: Untitled.011
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,7 +663,7 @@ GameObject:
   - component: {fileID: 330662878741545983}
   m_Layer: 0
   m_Name: Untitled
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

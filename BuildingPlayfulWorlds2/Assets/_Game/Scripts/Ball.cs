@@ -29,9 +29,10 @@ public class Ball : MonoBehaviour
     private bool isFadeOut = false;
     private bool gameStart = true;
 
+    [FMODUnity.EventRef] public string stoneHit;
+
     //TODO Add metal sound
     //TODO Add wood sound
-    //TODO Add stone sound
 
 
     // Start is called before the first frame update
@@ -43,8 +44,6 @@ public class Ball : MonoBehaviour
         mainLight = lightSource.GetComponent<Light>();
         if(this.gameObject.tag == "ballbounce") { ballKind = 1; }
         else if (this.gameObject.tag == "ballstick") { ballKind = 2; }
-        
-        
     }
 
     // Update is called once per frame
@@ -109,7 +108,8 @@ public class Ball : MonoBehaviour
             {
                 isStone = true;
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
-                //TODO Add sound
+                FMODUnity.RuntimeManager.PlayOneShot(stoneHit,collision.gameObject.transform.position);
+                Debug.Log("HIT STONE");
             }
             else if (collision.gameObject.tag == "Crystal")
             {

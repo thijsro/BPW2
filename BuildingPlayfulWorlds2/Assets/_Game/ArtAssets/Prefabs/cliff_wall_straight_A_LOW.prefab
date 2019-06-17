@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8411558739658917098}
   m_Layer: 0
   m_Name: outwallStraightA.007
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4651329026231731271}
   m_Layer: 0
   m_Name: transform54
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 3536870136430877378}
   m_Layer: 0
   m_Name: outwallStraightA.006
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5618877335071459338}
   m_Layer: 0
   m_Name: transform60
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1520238344788697859}
   m_Layer: 0
   m_Name: transform58
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 1365169354799018904}
   m_Layer: 0
   m_Name: outwallStraightA.005
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 5403075374809997647}
   m_Layer: 0
   m_Name: outwallStraightA.010
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 6517900240995789347}
   m_Layer: 0
   m_Name: outwallStraightA.003
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 8890067534727239001}
   m_Layer: 0
   m_Name: cliff_wall_straight_A_LOW
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,9 +316,10 @@ GameObject:
   - component: {fileID: 308985943050869031}
   - component: {fileID: 172118830063109506}
   - component: {fileID: 3550328847576391071}
+  - component: {fileID: 2769133091615378526}
   m_Layer: 0
   m_Name: outwallStraightA.011
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,6 +383,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2769133091615378526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2802865708227153440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4517701896303045522, guid: 016b3c0594db7f643a3ffb6be6de9e4f, type: 3}
 --- !u!1 &4866831735509609391
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +408,7 @@ GameObject:
   - component: {fileID: 580424100474862331}
   m_Layer: 0
   m_Name: transform55
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,7 +438,7 @@ GameObject:
   - component: {fileID: 325493043425481090}
   m_Layer: 0
   m_Name: transform53
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +468,7 @@ GameObject:
   - component: {fileID: 5864082825504318734}
   m_Layer: 0
   m_Name: transform56
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,7 +498,7 @@ GameObject:
   - component: {fileID: 4194123041047056268}
   m_Layer: 0
   m_Name: transform57
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +528,7 @@ GameObject:
   - component: {fileID: 6681097675367298759}
   m_Layer: 0
   m_Name: outwallStraightA
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +559,7 @@ GameObject:
   - component: {fileID: 2200705479225654796}
   m_Layer: 0
   m_Name: outwallStraightA.004
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -575,7 +590,7 @@ GameObject:
   - component: {fileID: 5809735616167383498}
   m_Layer: 0
   m_Name: transform52
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -605,7 +620,7 @@ GameObject:
   - component: {fileID: 3537072781312076836}
   m_Layer: 0
   m_Name: transform59
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -635,7 +650,7 @@ GameObject:
   - component: {fileID: 6645357143704745695}
   m_Layer: 0
   m_Name: outwallStraightA.008
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -666,7 +681,7 @@ GameObject:
   - component: {fileID: 4873784950326642278}
   m_Layer: 0
   m_Name: outwallStraightA.009
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

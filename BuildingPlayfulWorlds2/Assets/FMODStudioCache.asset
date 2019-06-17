@@ -13,12 +13,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636945663231103282
+  lastModified: 636964008056746199
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 672
+    Value: 720
   Exists: 1
+--- !u!114 &-2178494676861699668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Hits/Stone
+  guid: b06218a1c21e1947b35ae1b492e17354
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 384
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,12 +57,13 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -4225432987532480420}
   - {fileID: 9008941759850655320}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -2178494676861699668}
   MasterBanks:
   - {fileID: 9008941759850655320}
   StringsBanks:
   - {fileID: -4225432987532480420}
-  stringsBankWriteTime: 636945663231103282
+  stringsBankWriteTime: 636964008056746199
   cacheVersion: 3
 --- !u!114 &9008941759850655320
 MonoBehaviour:
@@ -54,9 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.bank
-  lastModified: 636945663231053403
+  lastModified: 636964008056696326
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 12474
+    Value: 18112
   Exists: 1
