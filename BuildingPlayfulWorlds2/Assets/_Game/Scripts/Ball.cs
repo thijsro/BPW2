@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] float thrust;
+    [SerializeField] private Collider sphereCollider;
     GameObject lightSource;
     private Light mainLight;
     private int ballKind; //1 = ballbounce 2 = ballstick
@@ -66,6 +67,7 @@ public class Ball : MonoBehaviour
         {
             StartCoroutine(fadeIn(mainLight, mainIntensity, durationOut));
         }
+        sphereCollider.enabled = false;
     }
 
     public void OnRelease()
@@ -73,6 +75,8 @@ public class Ball : MonoBehaviour
         transform.SetParent(null);
         GetComponent<Collider>().enabled = true;
         rb.isKinematic = false;
+        sphereCollider.enabled = true;
+
         //TODO wait for seconds
         
     }
@@ -110,7 +114,7 @@ public class Ball : MonoBehaviour
             else if (collision.gameObject.tag == "Crystal")
             {
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
-                collision.gameObject.GetComponent<CrystalScript>().TurnOn();
+                collision.gameObject.GetComponent<CrystalScript>().TurnOn(0);
             }
             else
             {

@@ -8,7 +8,6 @@ public class FirstPersonController : MonoBehaviour
     public float speed = 10.0f;
     public bool doInput = false;
     [SerializeField] float startDelay = 10f;
-    [SerializeField] float fadeInTime = 3f;
     public Image planeIm;
 
     [FMODUnity.EventRef] public string VoiceOver1;
@@ -18,7 +17,7 @@ public class FirstPersonController : MonoBehaviour
     void Start()
     {
         FMODUnity.RuntimeManager.PlayOneShot(VoiceOver1, this.transform.position);
-        StartCoroutine(startGame(fadeInTime, planeIm));
+        StartCoroutine(startGame(startDelay, planeIm));
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -45,7 +44,7 @@ public class FirstPersonController : MonoBehaviour
     IEnumerator startGame(float duration, Image image)
     {
         
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(duration);
         doInput = true;
     }
 }

@@ -156,9 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  doInput: 0
   startDelay: 10
   fadeInTime: 3
-  PlaneMat: {fileID: 0}
+  planeIm: {fileID: 0}
   VoiceOver1: 
 --- !u!114 &6520928342412039527
 MonoBehaviour:
@@ -175,6 +176,9 @@ MonoBehaviour:
   ballLayer:
     serializedVersion: 2
     m_Bits: 512
+  crystalLayer:
+    serializedVersion: 2
+    m_Bits: 4096
   attachPosition: {fileID: 6520928341705725347}
 --- !u!114 &985048844
 MonoBehaviour:

@@ -9,6 +9,7 @@ public class ThrowManager : MonoBehaviour
     private Ball CurrentBall;
     public LayerMask ballLayer;
     public LayerMask crystalLayer;
+    
 
     [SerializeField] GameObject attachPosition;
 
@@ -42,7 +43,7 @@ public class ThrowManager : MonoBehaviour
             {
                 Debug.Log("CRYSTAL HIT");
                 CrystalScript Crystal = hit.collider.gameObject.GetComponent<CrystalScript>();
-                Crystal.TurnOn();
+                Crystal.TurnOn(0);
                 
             }
         }
@@ -54,6 +55,7 @@ public class ThrowManager : MonoBehaviour
             CurrentBall.OnRelease();
             CurrentBall.AddForce();
             CurrentBall = null;
+            
             
         }
     }

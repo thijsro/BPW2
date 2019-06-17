@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3873022939954572407}
   - component: {fileID: 4127511467050828686}
   - component: {fileID: 423306167240382340}
+  - component: {fileID: 8356870091178568128}
   m_Layer: 12
   m_Name: pCube11
   m_TagString: Crystal
@@ -120,7 +121,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4010465758746840128}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.025
@@ -139,6 +140,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newMaterial: {fileID: 2100000, guid: 8add145029cf0b1448005a111ee9de68, type: 2}
   pointLight: {fileID: 5826813874378913916}
+  bridge: {fileID: 0}
+  isOn: 0
+--- !u!64 &8356870091178568128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010465758746840128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 664456749670281567, guid: a18af1b9f385f88438e8e46df4b195b4, type: 3}
 --- !u!1 &7493879860170829699
 GameObject:
   m_ObjectHideFlags: 0

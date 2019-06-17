@@ -19,12 +19,21 @@ public class CrystalScript : MonoBehaviour
         }
     }
 
-    public void TurnOn()
+    public void TurnOn(int crystalNumber)
     {
-        pointLight.gameObject.SetActive(true);
-        this.GetComponent<MeshRenderer>().material = newMaterial;
-        isOn = true;
-        bridge.checkCrystals();
+        if(crystalNumber == 1)
+        {
+            pointLight.gameObject.SetActive(true);
+            this.GetComponent<MeshRenderer>().material = newMaterial;
+        }
+        else
+        {
+            pointLight.gameObject.SetActive(true);
+            this.GetComponent<MeshRenderer>().material = newMaterial;
+            isOn = true;
+            bridge.checkCrystals();
+        }
+
         
     }
 
