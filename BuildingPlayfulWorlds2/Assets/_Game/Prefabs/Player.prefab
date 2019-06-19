@@ -202,9 +202,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  originalSpeed: 5
+  newSpeed: 10
   doInput: 0
-  startDelay: 0
   planeIm: {fileID: 0}
+  isRunning: 0
+  startDelay: 0
+  staminaSpeed: 0.1
+  maxStamina: 100
   VoiceOver1: event:/Hits/Stone
 --- !u!114 &6520928342412039527
 MonoBehaviour:
@@ -224,6 +229,8 @@ MonoBehaviour:
   crystalLayer:
     serializedVersion: 2
     m_Bits: 4096
+  hitDistanceBall: 10
+  hitDistanceCrystal: 5
   attachPosition: {fileID: 6520928341705725347}
 --- !u!114 &985048844
 MonoBehaviour:
@@ -237,11 +244,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788a1376e1b3cc74e98afd9587636c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inLight: 0
   volume: {fileID: 0}
-  VignetteInt: 0
-  maxLightDistance: 10
-  fadeSpeed: 2
+  VignetteIntensity: 0
+  fadeInSpeed: 10
+  fadeOutSpeed: 1
+  deathUI: {fileID: 0}
+  respawnPosition: {fileID: 0}
 --- !u!1 &6520928343110352101
 GameObject:
   m_ObjectHideFlags: 0

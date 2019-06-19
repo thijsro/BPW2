@@ -5,11 +5,26 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 5f;
+    public float originalSpeed = 5f;
+    public float newSpeed = 10f;
     public bool doInput = false;
-    [SerializeField] float startDelay = 10f;
     public Image planeIm;
+    public bool isRunning;
 
+    [SerializeField] float startDelay = 10f;
+    [SerializeField] float staminaSpeed = 0.1f;
+    [SerializeField] private float maxStamina = 100f;
+
+
+    private float lerpTime;
+    private float currentStamina = 100f;
+    private float minStamina = 0.0f;
+    private bool staminaEmpty = false;
+    private bool staminaFull = true;
+    private bool canRun = true;
+
+    //FMOD
     [FMODUnity.EventRef] public string VoiceOver1;
 
     bool isFading;
@@ -38,16 +53,48 @@ public class FirstPersonController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
 
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+
+                if(currentStamina > minStamina)
+                {
+                    currentStamina -= staminaSpeed;
+                    speed = newSpeed;
+                    isRunning = true;
+                }
+                else if(currentStamina == minStamina)
+                {
+                    isRunning = false;
+                    speed = originalSpeed;
+
+                }
+                if (currentStamina < minStamina)
+                {
+                    currentStamina = minStamina;
+                }
+                
+            }
+            else 
+            {
+                if(currentStamina <= maxStamina)
+                {
+                currentStamina += staminaSpeed;
+                speed = originalSpeed;
+                isRunning = false;
+                }
+                if (currentStamina > maxStamina)
+                {
+                    currentStamina = maxStamina;
+                }
+            }
+            Debug.Log(currentStamina);
         }
-
-        
-
     }
 
     IEnumerator startGame(float duration, Image image)
     {
-        
         yield return new WaitForSeconds(duration);
         doInput = true;
     }
+
 }

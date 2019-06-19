@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] float thrust = 1000;
     [SerializeField] private Collider sphereCollider;
     [SerializeField] GameObject attachPosition;
+    [SerializeField] private ParticleSystem ballExplosion;
     GameObject lightSource;
     private Light mainLight;
     private int ballKind; //1 = ballbounce 2 = ballstick
@@ -121,6 +122,12 @@ public class Ball : MonoBehaviour
             else if (collision.gameObject.tag == "BallRespawn")
             {
                 OnPickup(attachPosition);
+            }
+            else if (collision.gameObject.tag == "BadCrystal")
+            {
+                collision.gameObject.GetComponent<CrystalScript>().TurnOn(0);
+                ballExplosion.GetComponent<ParticleSystem>().Play();
+                Destroy(this.gameObject,ballExplosion.main.duration);
             }
             else
             {
