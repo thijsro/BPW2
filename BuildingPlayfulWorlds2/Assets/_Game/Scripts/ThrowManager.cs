@@ -9,7 +9,9 @@ public class ThrowManager : MonoBehaviour
     private Ball CurrentBall;
     public LayerMask ballLayer;
     public LayerMask crystalLayer;
-    
+    [SerializeField] private float hitDistanceBall = 10f;
+    [SerializeField] private float hitDistanceCrystal = 5f;
+
 
     [SerializeField] GameObject attachPosition;
 
@@ -29,7 +31,7 @@ public class ThrowManager : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 10f, ballLayer))
+            if (Physics.Raycast(ray, out hit, hitDistanceBall, ballLayer))
             {
                 Ball ball = hit.collider.gameObject.GetComponent<Ball>();
                 if (ball != null)
@@ -39,9 +41,8 @@ public class ThrowManager : MonoBehaviour
                 }
                 
             }
-            if (Physics.Raycast(ray, out hit, 10f, crystalLayer))
+            if (Physics.Raycast(ray, out hit, hitDistanceCrystal, crystalLayer))
             {
-                Debug.Log("CRYSTAL HIT");
                 CrystalScript Crystal = hit.collider.gameObject.GetComponent<CrystalScript>();
                 Crystal.TurnOn(0);
                 

@@ -7,7 +7,8 @@ public class Bridge : MonoBehaviour
     public GameObject[] crystals;
     public GameObject winCrystal;
     public GameObject objectEnable;
-    [SerializeField] private bool isBridge;
+    [SerializeField] private bool isBridge = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +25,14 @@ public class Bridge : MonoBehaviour
         winCrystal.GetComponent<CrystalScript>().TurnOn(1);
         if (isBridge == false)
         {
-            objectEnable.SetActive(false);
+            objectEnable.GetComponent<animController>().PlayAnim();
         }
         else
         {
             objectEnable.SetActive(true);
+            objectEnable.GetComponent<animController>().PlayAnim();
         }
         
-        Debug.Log("BRIDGE OPEN");
     }
 
     public void checkCrystals()

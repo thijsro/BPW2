@@ -9,17 +9,17 @@ public class LightChecker : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         //Debug.Log(other.gameObject.name);
         if (other.gameObject.layer == 11)
         {
-            FindObjectOfType<DeathManager>().inLight = true;
+            FindObjectOfType<DeathManager>().InLight = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        FindObjectOfType<DeathManager>().inLight = false;
+        FindObjectOfType<DeathManager>().InLight = false;
     }
 }

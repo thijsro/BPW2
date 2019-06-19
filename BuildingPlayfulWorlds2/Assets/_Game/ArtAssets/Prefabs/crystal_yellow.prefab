@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7253260369883719052}
   m_Layer: 12
   m_Name: pCube11
-  m_TagString: Crystal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,6 +139,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newMaterial: {fileID: 2100000, guid: 2683defc979cfcf4eb5e2b91159c3d6f, type: 2}
   pointLight: {fileID: 5826813874378913916}
+  bridge: {fileID: 0}
+  isOn: 0
+  lightCheckerCollider: {fileID: 7493879860170829699}
+  crystalHit: event:/Hits/Crystal
 --- !u!1 &7493879860170829699
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4568817573618888801
 Transform:
   m_ObjectHideFlags: 0

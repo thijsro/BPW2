@@ -11,6 +11,8 @@ TagManager:
   - ballstick
   - RenderSettings
   - Crystal
+  - BallRespawn
+  - respawnTrigger
   layers:
   - Default
   - TransparentFX

@@ -37,7 +37,10 @@ public class FirstPersonController : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.None;
             }
+
         }
+
+        
 
     }
 

@@ -97,6 +97,7 @@
         </property>
         <relationship name="modulators">
             <destination>{fe21518d-5f1c-4290-908f-e0b99650f9ad}</destination>
+            <destination>{ef964edb-a199-4332-9642-8f5dbc75d14d}</destination>
         </relationship>
         <relationship name="audioFile">
             <destination>{af41ef7a-a1a2-466c-b176-6e605f0fbe2a}</destination>
@@ -132,7 +133,15 @@
             <value>pitch</value>
         </property>
         <property name="amount">
-            <value>3.5</value>
+            <value>8.5</value>
+        </property>
+    </object>
+    <object class="RandomizerModulator" id="{ef964edb-a199-4332-9642-8f5dbc75d14d}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{de60b4ef-5387-456b-b0ac-6bd46bde5ed8}">
@@ -149,10 +158,10 @@
             <value>1</value>
         </property>
         <property name="minimumDistance">
-            <value>20</value>
+            <value>7</value>
         </property>
         <property name="maximumDistance">
-            <value>100</value>
+            <value>50</value>
         </property>
     </object>
     <object class="DelayEffect" id="{a377e771-0f80-48cb-ba7b-a18e7c3a0989}">

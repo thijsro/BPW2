@@ -5,8 +5,9 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float thrust;
+    [SerializeField] float thrust = 1000;
     [SerializeField] private Collider sphereCollider;
+    [SerializeField] GameObject attachPosition;
     GameObject lightSource;
     private Light mainLight;
     private int ballKind; //1 = ballbounce 2 = ballstick
@@ -30,6 +31,7 @@ public class Ball : MonoBehaviour
     private bool gameStart = true;
 
     [FMODUnity.EventRef] public string stoneHit;
+
 
     //TODO Add metal sound
     //TODO Add wood sound
@@ -89,7 +91,7 @@ public class Ball : MonoBehaviour
     {  
         if(ballKind == 1)
         {
-            Debug.Log("collided with " + collision.name);
+            //Debug.Log("collided with " + collision.name);
             StopAllCoroutines();
             if (collision.gameObject.tag == "Metal")
             {
@@ -109,12 +111,16 @@ public class Ball : MonoBehaviour
                 isStone = true;
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
                 FMODUnity.RuntimeManager.PlayOneShot(stoneHit,collision.gameObject.transform.position);
-                Debug.Log("HIT STONE");
             }
             else if (collision.gameObject.tag == "Crystal")
             {
                 StartCoroutine(fadeIn(mainLight, stoneIntensity, durationIn));
                 collision.gameObject.GetComponent<CrystalScript>().TurnOn(0);
+
+            }
+            else if (collision.gameObject.tag == "BallRespawn")
+            {
+                OnPickup(attachPosition);
             }
             else
             {

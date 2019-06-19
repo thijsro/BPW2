@@ -6,60 +6,90 @@ using UnityEngine.Experimental.Rendering.HDPipeline;
 
 public class DeathManager : MonoBehaviour
 {
-    public bool inLight;
+    private bool inLight = false;
+    public bool InLight
+    {
+        get
+        {
+            return inLight;
+        }
+        set
+        {
+            if(value != inLight)
+            {
+                UpdateVignette(value);
+            }
+            inLight = value;
+        }
+    }
 
     public Volume volume;
+    [SerializeField] private float VignetteIntensity = 0;
+    [SerializeField] private float fadeInSpeed = 2f;
+    [SerializeField] private float fadeOutSpeed = 2f;
 
-    Vignette vignette;
+    private float lerpTime;
+    private Vignette vignette;
+    private Coroutine deathRoutine;
 
-    public float VignetteInt;
-
-    public float maxLightDistance = 10;
-    [SerializeField] float fadeSpeed = 2f;
-    float lerpTime;
+    [SerializeField] private GameObject deathUI;
+    public GameObject respawnPosition;
 
 
     private void Start()
     {
         vignette = (Vignette)volume.profile.components[5];
-        VignetteInt = vignette.intensity.value;
+        VignetteIntensity = vignette.intensity.value;
     }
 
-    private void Update()
+    private void UpdateVignette(bool isInlIght)
     {
-        //Debug.Log(vignette.intensity.value);
-
-        
-        if (!inLight)
+        if(deathRoutine != null)
         {
-            //Debug.Log("NOTINLIGHT");
-            //TowardsDeath();
+            StopCoroutine(deathRoutine);
+        }
+        if (isInlIght)
+        {
+            deathRoutine = StartCoroutine(VignetteIn(0.3f, fadeOutSpeed));
         }
         else
         {
-            //Debug.Log("INLIGHT");
-            TowardsLife();  
-            /*if (LightTransform != null)
-            {
-                VignetteInt = (Vector3.Distance(transform.position, LightTransform.position) / maxLightDistance);
-                VignetteInt = Mathf.Clamp(VignetteInt, 0.3f, 1f);
-                vignette.intensity.value = VignetteInt;
-            }*/
-        } 
+            deathRoutine = StartCoroutine(VignetteIn(1f, fadeInSpeed));
+
+            
+        }
     }
-    
-    public void TowardsDeath()
+
+    IEnumerator VignetteIn(float targetValue, float fadeSpeed)
     {
-        lerpTime += (Time.deltaTime / fadeSpeed);
-
-        vignette.intensity.value = Mathf.Lerp(VignetteInt, 1f, lerpTime);
+        lerpTime = 0;
+        float startValue = vignette.intensity.value;
+        float step = Time.deltaTime / fadeSpeed;
+        while (lerpTime < 1)
+        {
+            yield return null;
+            lerpTime += step;
+            vignette.intensity.value = Mathf.Lerp(startValue, targetValue, lerpTime);
+        }
+        deathRoutine = null;
+        if (vignette.intensity.value >= 1f)
+        {
+            StartCoroutine(DeathUI());
+        }
     }
 
-    public void TowardsLife()
+    IEnumerator DeathUI()
     {
-        lerpTime += (Time.deltaTime / fadeSpeed);
-        vignette.intensity.value = Mathf.Lerp(VignetteInt, 0.3f, lerpTime);
+        deathUI.SetActive(true);
+        Debug.Log("DeathUI ON");
+        Invoke("DeathRespawn", 2);
+        return null;
     }
-    
 
+    void DeathRespawn()
+    {
+        this.gameObject.transform.position = respawnPosition.transform.position;
+        deathUI.SetActive(false);
+        StartCoroutine(VignetteIn(0.3f, fadeOutSpeed));
+    }
 }

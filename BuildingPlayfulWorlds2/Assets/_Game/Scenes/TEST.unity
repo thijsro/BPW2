@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.049639888, g: 0.06998917, b: 0.109378524, a: 1}
+  m_IndirectSpecularColor: {r: 0.049474243, g: 0.069760285, b: 0.109093696, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4705,6 +4705,7 @@ MonoBehaviour:
   - {fileID: 1300978746}
   winCrystal: {fileID: 44105142}
   objectEnable: {fileID: 1332100893}
+  isBridge: 0
 --- !u!4 &1073672860
 Transform:
   m_ObjectHideFlags: 0
@@ -6344,6 +6345,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal_yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 4010465758746840128, guid: de2036512fb834341b3e9609f99df3d7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010465758746840128, guid: de2036512fb834341b3e9609f99df3d7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2166974224427035065, guid: de2036512fb834341b3e9609f99df3d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6404,16 +6415,6 @@ PrefabInstance:
       propertyPath: bridge
       value: 
       objectReference: {fileID: 1073672859}
-    - target: {fileID: 4010465758746840128, guid: de2036512fb834341b3e9609f99df3d7,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 4010465758746840128, guid: de2036512fb834341b3e9609f99df3d7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7493879860170829699, guid: de2036512fb834341b3e9609f99df3d7,
         type: 3}
       propertyPath: m_Layer
@@ -9420,5 +9421,15 @@ PrefabInstance:
       propertyPath: planeIm
       value: 
       objectReference: {fileID: 1487917018}
+    - target: {fileID: 4180257771117018161, guid: 40d0bfeca519d514aaedad33bcee414f,
+        type: 3}
+      propertyPath: isWalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586837195198078451, guid: 40d0bfeca519d514aaedad33bcee414f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d0bfeca519d514aaedad33bcee414f, type: 3}

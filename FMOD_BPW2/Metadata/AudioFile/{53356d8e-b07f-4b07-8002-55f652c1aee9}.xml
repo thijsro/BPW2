@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{53356d8e-b07f-4b07-8002-55f652c1aee9}">
+        <property name="assetPath">
+            <value>crystal_on.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.7950340136054421</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cd699752-1c72-4d42-a046-11c83bb81600}</destination>
+        </relationship>
+    </object>
+</objects>

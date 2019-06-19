@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{5a2ad882-8f25-4e1c-9404-af32d82bef2f}">
+        <property name="assetPath">
+            <value>footsteps stone 7-Group.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.42857142857142855</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cd699752-1c72-4d42-a046-11c83bb81600}</destination>
+        </relationship>
+    </object>
+</objects>

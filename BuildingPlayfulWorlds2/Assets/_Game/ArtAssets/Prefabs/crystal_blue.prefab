@@ -142,6 +142,8 @@ MonoBehaviour:
   pointLight: {fileID: 5826813874378913916}
   bridge: {fileID: 0}
   isOn: 0
+  lightCheckerCollider: {fileID: 7493879860170829699}
+  crystalHit: event:/Hits/Crystal
 --- !u!64 &2740694883682854188
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -174,7 +176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4568817573618888801
 Transform:
   m_ObjectHideFlags: 0

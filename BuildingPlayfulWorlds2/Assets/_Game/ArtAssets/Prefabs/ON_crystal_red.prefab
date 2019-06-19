@@ -43,11 +43,10 @@ GameObject:
   - component: {fileID: 268441743665336593}
   - component: {fileID: 3873022939954572407}
   - component: {fileID: 4127511467050828686}
-  - component: {fileID: 4010465758746840129}
   - component: {fileID: 2740694883682854188}
   m_Layer: 12
   m_Name: pCube11
-  m_TagString: Crystal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,22 +125,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.025
   m_Center: {x: -0.0017303489, y: 0.0014055204, z: 0.00083159003}
---- !u!114 &4010465758746840129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010465758746840128}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 574a04254dfe6d54bbcdd49fbe931f80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newMaterial: {fileID: 2100000, guid: aa1551570a37c1b439ce39731b13a786, type: 2}
-  pointLight: {fileID: 5826813874378913916}
-  bridge: {fileID: 0}
-  isOn: 0
 --- !u!64 &2740694883682854188
 MeshCollider:
   m_ObjectHideFlags: 0

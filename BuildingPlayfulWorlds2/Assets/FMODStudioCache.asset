@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636964008056746199
+  lastModified: 636965372065340484
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 720
+    Value: 832
   Exists: 1
 --- !u!114 &-2178494676861699668
 MonoBehaviour:
@@ -39,8 +39,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 7
+  MaxDistance: 50
   Length: 384
 --- !u!114 &11400000
 MonoBehaviour:
@@ -59,12 +59,60 @@ MonoBehaviour:
   - {fileID: 9008941759850655320}
   EditorEvents:
   - {fileID: -2178494676861699668}
+  - {fileID: 4807293377340327306}
+  - {fileID: 8743581460810154946}
   MasterBanks:
   - {fileID: 9008941759850655320}
   StringsBanks:
   - {fileID: -4225432987532480420}
-  stringsBankWriteTime: 636964008056746199
+  stringsBankWriteTime: 636965372065340484
   cacheVersion: 3
+--- !u!114 &4807293377340327306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: 02054eaa45ee1c43961fed4049e47466
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 428
+--- !u!114 &8743581460810154946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Hits/Crystal
+  guid: b5e18ba25eb6b4498df0eb67a47399b2
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 9.8
+  MaxDistance: 60
+  Length: 1795
 --- !u!114 &9008941759850655320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,9 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.bank
-  lastModified: 636964008056696326
+  lastModified: 636965372065320528
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 18112
+    Value: 89216
   Exists: 1
