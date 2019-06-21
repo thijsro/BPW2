@@ -15,6 +15,7 @@ public class animController : MonoBehaviour
 
     public void PlayAnim()
     {
+        Debug.Log("PlayAnimation");
         anim.Play(stringAnimation);
     }
 }

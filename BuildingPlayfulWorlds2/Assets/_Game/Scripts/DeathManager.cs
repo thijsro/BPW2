@@ -92,4 +92,12 @@ public class DeathManager : MonoBehaviour
         deathUI.SetActive(false);
         StartCoroutine(VignetteIn(0.3f, fadeOutSpeed));
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "BallRespawn")
+        {
+            deathRoutine = StartCoroutine(VignetteIn(1f, fadeInSpeed));
+        }
+    }
 }

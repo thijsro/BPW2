@@ -40,10 +40,12 @@ public class Bridge : MonoBehaviour
         bool canDoorOpen = true;
         for (int i = 0; i < crystals.Length; i++)
         {
+            Debug.Log("isOn");
             canDoorOpen &= crystals[i].GetComponent<CrystalScript>().isOn;
         }
         if (canDoorOpen == true)
-        {   
+        {
+            Debug.Log("Turn on");
             Open();
         }
         

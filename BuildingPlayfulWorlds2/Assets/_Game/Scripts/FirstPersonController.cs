@@ -87,7 +87,7 @@ public class FirstPersonController : MonoBehaviour
                     currentStamina = maxStamina;
                 }
             }
-            Debug.Log(currentStamina);
+            //Debug.Log(currentStamina);
         }
     }
 

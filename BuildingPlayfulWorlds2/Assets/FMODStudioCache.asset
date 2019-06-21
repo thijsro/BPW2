@@ -13,12 +13,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636965372065340484
+  lastModified: 636967323308170430
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 832
+    Value: 1152
   Exists: 1
+--- !u!114 &-2813242023455802920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver7
+  guid: e84eeeedc67b1b4db30d661a99d2821e
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2433805452098578015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver6
+  guid: 027770c138d07445b35f2204287a476c
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2178494676861699668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,6 +88,29 @@ MonoBehaviour:
   MinDistance: 7
   MaxDistance: 50
   Length: 384
+--- !u!114 &-479544446504872175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver9
+  guid: 7eda1cdb553a734bb3180663322b6a92
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,12 +130,113 @@ MonoBehaviour:
   - {fileID: -2178494676861699668}
   - {fileID: 4807293377340327306}
   - {fileID: 8743581460810154946}
+  - {fileID: -2433805452098578015}
+  - {fileID: 3682760955751493327}
+  - {fileID: 3575715357288952530}
+  - {fileID: -479544446504872175}
+  - {fileID: 1684797713167086437}
+  - {fileID: 6131501354679290241}
+  - {fileID: 2820188803742465815}
+  - {fileID: 8489495942124859261}
+  - {fileID: -2813242023455802920}
   MasterBanks:
   - {fileID: 9008941759850655320}
   StringsBanks:
   - {fileID: -4225432987532480420}
-  stringsBankWriteTime: 636965372065340484
+  stringsBankWriteTime: 636967323308170430
   cacheVersion: 3
+--- !u!114 &1684797713167086437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver1
+  guid: 9044f5f8140fa849ada51360e18b0441
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2820188803742465815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver3
+  guid: cd3097947a02ae49a4e84a09a5cbbb40
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3575715357288952530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver8
+  guid: 6686135f78913a4bb60a738a5b76fd78
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3682760955751493327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver4
+  guid: 0a2428be8b3aee418834b4b839096774
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4807293377340327306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +260,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 428
+--- !u!114 &6131501354679290241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver2
+  guid: 9be2386d5b783348bc0f009330f7a140
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8489495942124859261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver5
+  guid: d530894eb2c5d540abbf3259f02e080d
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8743581460810154946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,8 +326,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 9.8
-  MaxDistance: 60
+  MinDistance: 1
+  MaxDistance: 10
   Length: 1795
 --- !u!114 &9008941759850655320
 MonoBehaviour:
@@ -126,9 +342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.bank
-  lastModified: 636965372065320528
+  lastModified: 636967323308120570
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 89216
+    Value: 94848
   Exists: 1
