@@ -70,6 +70,8 @@ public class Ball : MonoBehaviour
             StartCoroutine(fadeIn(mainLight, mainIntensity, durationOut));
         }
         sphereCollider.enabled = false;
+        FindObjectOfType<ThrowManager>().CurrentBall = this;
+        FindObjectOfType<DeathManager>().InLight = true;
     }
 
     public void OnRelease()

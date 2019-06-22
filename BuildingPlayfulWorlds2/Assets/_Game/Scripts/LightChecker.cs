@@ -20,6 +20,10 @@ public class LightChecker : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        FindObjectOfType<DeathManager>().InLight = false;
+        if (FindObjectOfType<ThrowManager>().CurrentBall == null)
+        {
+            Debug.Log("NOTINLIGHT");
+            FindObjectOfType<DeathManager>().InLight = false;
+        }
     }
 }

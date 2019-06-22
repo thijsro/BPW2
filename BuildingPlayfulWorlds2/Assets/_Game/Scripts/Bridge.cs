@@ -25,6 +25,7 @@ public class Bridge : MonoBehaviour
         winCrystal.GetComponent<CrystalScript>().TurnOn(1);
         if (isBridge == false)
         {
+            Debug.Log("play anim");
             objectEnable.GetComponent<animController>().PlayAnim();
         }
         else

@@ -6,7 +6,7 @@ public class ThrowManager : MonoBehaviour
 {
     GameObject ball;
     Rigidbody rb;
-    private Ball CurrentBall;
+    public Ball CurrentBall;
     public LayerMask ballLayer;
     public LayerMask crystalLayer;
     [SerializeField] private float hitDistanceBall = 10f;
