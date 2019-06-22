@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonManager : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
     public void PlayGameBTN(string newGameLevel)
     {
         SceneManager.LoadScene(newGameLevel);

@@ -36,6 +36,7 @@ public class FirstPersonController : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(AmbientSound, this.transform.position);
         StartCoroutine(startGame(startDelay, planeIm));
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
