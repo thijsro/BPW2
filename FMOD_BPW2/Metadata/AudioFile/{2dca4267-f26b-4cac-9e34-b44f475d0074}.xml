@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2dca4267-f26b-4cac-9e34-b44f475d0074}">
+        <property name="assetPath">
+            <value>WhatsAppAudio2019-06-21at20.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>7.8578333333333337</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cd699752-1c72-4d42-a046-11c83bb81600}</destination>
+        </relationship>
+    </object>
+</objects>

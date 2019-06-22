@@ -26,12 +26,14 @@ public class FirstPersonController : MonoBehaviour
 
     //FMOD
     [FMODUnity.EventRef] public string VoiceOver1;
+    [FMODUnity.EventRef] public string AmbientSound;
 
     bool isFading;
     // Start is called before the first frame update
     void Start()
     {
         FMODUnity.RuntimeManager.PlayOneShot(VoiceOver1, this.transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot(AmbientSound, this.transform.position);
         StartCoroutine(startGame(startDelay, planeIm));
         Cursor.lockState = CursorLockMode.Locked;
     }

@@ -8,6 +8,8 @@ public class Bridge : MonoBehaviour
     public GameObject winCrystal;
     public GameObject objectEnable;
     [SerializeField] private bool isBridge = false;
+
+    [FMODUnity.EventRef] public string deathBallSound;
     
 
     // Start is called before the first frame update
@@ -27,6 +29,7 @@ public class Bridge : MonoBehaviour
         {
             Debug.Log("play anim");
             objectEnable.GetComponent<animController>().PlayAnim();
+            FMODUnity.RuntimeManager.PlayOneShot(deathBallSound);
         }
         else
         {

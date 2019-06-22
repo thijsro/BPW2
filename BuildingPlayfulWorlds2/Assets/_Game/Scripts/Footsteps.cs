@@ -5,7 +5,7 @@ using UnityEngine;
 public class Footsteps : MonoBehaviour
 {
     [FMODUnity.EventRef] public string inputSound;
-    bool playerIsMoving;
+    public bool playerIsMoving;
     public float walkSpeed;
 
     private void Start()
@@ -15,15 +15,19 @@ public class Footsteps : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetAxis ("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
-        {
-            playerIsMoving = true;
+        if(FindObjectOfType<FirstPersonController>().doInput == true){
+            if (Input.GetAxis("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
+            {
+                playerIsMoving = true;
+            }
+            else if (Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0)
+            {
+
+                playerIsMoving = false;
+            }
         }
-        else if (Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0)
-        {
-            
-            playerIsMoving = false;
-        }
+
+
 
     }
 

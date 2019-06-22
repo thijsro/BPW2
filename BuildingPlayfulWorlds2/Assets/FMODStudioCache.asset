@@ -1,5 +1,162 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7556461902068459277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver04
+  guid: d530894eb2c5d540abbf3259f02e080d
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 21000
+--- !u!114 &-7254989475871045687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver012
+  guid: 4795ae18d2a51747b7ac3910c0530658
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
+--- !u!114 &-7104601526166007285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver14
+  guid: 5e0ee3cc91ecc242b65f35b6e9df3ea8
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13798
+--- !u!114 &-6622376047212712653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver15 (2)
+  guid: 94701f89f590a7429661d1ef6be68e96
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15197
+--- !u!114 &-6375317014203811292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver11
+  guid: a4d0009bc284824293a8501a32859db1
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2100
+--- !u!114 &-5754661014120351097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver09
+  guid: 1aa63a3ec335854fad785340c539dd1e
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 17000
+--- !u!114 &-5651091272659245378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver15
+  guid: 5e0ee3cc91ecc242b65f35b6e9df3ea8
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13798
 --- !u!114 &-4225432987532480420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,12 +170,147 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636967323308170430
+  lastModified: 636968247140881218
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1152
+    Value: 1410
   Exists: 1
+--- !u!114 &-4114342820489846100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver01
+  guid: 9044f5f8140fa849ada51360e18b0441
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16600
+--- !u!114 &-4024144192635510043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver014
+  guid: 5e0ee3cc91ecc242b65f35b6e9df3ea8
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13798
+--- !u!114 &-3916781160373588855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver06
+  guid: e84eeeedc67b1b4db30d661a99d2821e
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 17500
+--- !u!114 &-3052259376852212256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver15
+  guid: 94701f89f590a7429661d1ef6be68e96
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15197
+--- !u!114 &-2954140872161507837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver015
+  guid: 94701f89f590a7429661d1ef6be68e96
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15197
+--- !u!114 &-2851648503532261893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver013
+  guid: d1ee84be3aa353448bc725fcd23bbe40
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5500
 --- !u!114 &-2813242023455802920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,15 +325,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver7
   guid: e84eeeedc67b1b4db30d661a99d2821e
-  Banks:
-  - {fileID: 9008941759850655320}
-  IsStream: 0
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 17500
 --- !u!114 &-2433805452098578015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,15 +347,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver6
   guid: 027770c138d07445b35f2204287a476c
-  Banks:
-  - {fileID: 9008941759850655320}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 3757
 --- !u!114 &-2178494676861699668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +378,73 @@ MonoBehaviour:
   MinDistance: 7
   MaxDistance: 50
   Length: 384
+--- !u!114 &-2059841515111040886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver14
+  guid: d1ee84be3aa353448bc725fcd23bbe40
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5500
+--- !u!114 &-1428536844840852032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver011
+  guid: 1af9ffd605a78740b80765c889734b43
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15286
+--- !u!114 &-1201231212913551809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver10
+  guid: a4d0009bc284824293a8501a32859db1
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2100
 --- !u!114 &-479544446504872175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,15 +459,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver9
   guid: 7eda1cdb553a734bb3180663322b6a92
-  Banks:
-  - {fileID: 9008941759850655320}
-  IsStream: 0
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 16500
+--- !u!114 &-103235301545754723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver13
+  guid: 4795ae18d2a51747b7ac3910c0530658
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,21 +508,97 @@ MonoBehaviour:
   - {fileID: -2178494676861699668}
   - {fileID: 4807293377340327306}
   - {fileID: 8743581460810154946}
-  - {fileID: -2433805452098578015}
-  - {fileID: 3682760955751493327}
-  - {fileID: 3575715357288952530}
-  - {fileID: -479544446504872175}
-  - {fileID: 1684797713167086437}
-  - {fileID: 6131501354679290241}
-  - {fileID: 2820188803742465815}
-  - {fileID: 8489495942124859261}
-  - {fileID: -2813242023455802920}
+  - {fileID: 1125088491157789229}
+  - {fileID: 8398046675666666452}
+  - {fileID: -5754661014120351097}
+  - {fileID: 8227698160286865608}
+  - {fileID: 1106284878203142799}
+  - {fileID: -4114342820489846100}
+  - {fileID: 8595534045317462726}
+  - {fileID: -7556461902068459277}
+  - {fileID: -3916781160373588855}
+  - {fileID: 8840391037702898244}
+  - {fileID: 5699731695118185336}
+  - {fileID: -7104601526166007285}
+  - {fileID: -3052259376852212256}
+  - {fileID: -1201231212913551809}
+  - {fileID: 1059600089752848202}
+  - {fileID: 5195761992716041698}
   MasterBanks:
   - {fileID: 9008941759850655320}
   StringsBanks:
   - {fileID: -4225432987532480420}
-  stringsBankWriteTime: 636967323308170430
+  stringsBankWriteTime: 636968247140881218
   cacheVersion: 3
+--- !u!114 &1059600089752848202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver13
+  guid: d1ee84be3aa353448bc725fcd23bbe40
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5500
+--- !u!114 &1106284878203142799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver08
+  guid: 7eda1cdb553a734bb3180663322b6a92
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16500
+--- !u!114 &1125088491157789229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver05
+  guid: 027770c138d07445b35f2204287a476c
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3757
 --- !u!114 &1684797713167086437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,15 +613,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver1
   guid: 9044f5f8140fa849ada51360e18b0441
-  Banks:
-  - {fileID: 9008941759850655320}
-  IsStream: 0
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 17000
 --- !u!114 &2820188803742465815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,15 +635,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver3
   guid: cd3097947a02ae49a4e84a09a5cbbb40
-  Banks:
-  - {fileID: 9008941759850655320}
-  IsStream: 0
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 15400
+--- !u!114 &3410595109133927264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver10
+  guid: 1aa63a3ec335854fad785340c539dd1e
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 17000
 --- !u!114 &3575715357288952530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,15 +679,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver8
   guid: 6686135f78913a4bb60a738a5b76fd78
-  Banks:
-  - {fileID: 9008941759850655320}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 1350
 --- !u!114 &3682760955751493327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,15 +701,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver4
   guid: 0a2428be8b3aee418834b4b839096774
-  Banks:
-  - {fileID: 9008941759850655320}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 7410
+--- !u!114 &4699759352375199941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver12
+  guid: 1af9ffd605a78740b80765c889734b43
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15286
 --- !u!114 &4807293377340327306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +754,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 428
+--- !u!114 &5195761992716041698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/LowAmbient
+  guid: 3541bfe1c38a3d4abed8386a18dfd2bc
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1220048
+--- !u!114 &5699731695118185336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver12
+  guid: 4795ae18d2a51747b7ac3910c0530658
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
 --- !u!114 &6131501354679290241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +814,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver2
   guid: 9be2386d5b783348bc0f009330f7a140
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2950
+--- !u!114 &6832636631566838553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver010
+  guid: a4d0009bc284824293a8501a32859db1
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2100
+--- !u!114 &7262362594955062234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/LowAmbient
+  guid: 3541bfe1c38a3d4abed8386a18dfd2bc
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1220048
+--- !u!114 &8227698160286865608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver07
+  guid: 6686135f78913a4bb60a738a5b76fd78
   Banks:
   - {fileID: 9008941759850655320}
   IsStream: 0
@@ -282,7 +889,30 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 1350
+--- !u!114 &8398046675666666452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver03
+  guid: 0a2428be8b3aee418834b4b839096774
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7410
 --- !u!114 &8489495942124859261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,15 +927,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceOver/VoiceOver5
   guid: d530894eb2c5d540abbf3259f02e080d
-  Banks:
-  - {fileID: 9008941759850655320}
-  IsStream: 0
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 21000
+--- !u!114 &8595534045317462726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver02
+  guid: cd3097947a02ae49a4e84a09a5cbbb40
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15400
 --- !u!114 &8743581460810154946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +981,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 1795
+--- !u!114 &8840391037702898244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/VoiceOver11
+  guid: 1af9ffd605a78740b80765c889734b43
+  Banks:
+  - {fileID: 9008941759850655320}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15286
 --- !u!114 &9008941759850655320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,9 +1017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\HkuGames\BPW2\FMOD_BPW2\Build\Desktop\Master Bank.bank
-  lastModified: 636967323308120570
+  lastModified: 636968247140831354
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 94848
+    Value: 12296512
   Exists: 1

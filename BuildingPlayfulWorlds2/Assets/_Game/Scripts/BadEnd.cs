@@ -17,6 +17,8 @@ public class BadEnd : MonoBehaviour
         anim.Play(stringAnimation);
         StartCoroutine(WaitUntilLoadLevel());
         Debug.Log("play anim");
+        FindObjectOfType<Footsteps>().playerIsMoving = false;
+
     }
 
     IEnumerator WaitUntilLoadLevel()
